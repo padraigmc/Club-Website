@@ -1,3 +1,8 @@
+body {
+    background-color: #212529 !important;
+    line-height: 2 !important;
+}
+
 @media (max-width:767.98px){
 
 }
@@ -8,7 +13,7 @@
 }
 
 nav {
-    opacity: 70%;
+    /*opacity: 70%;*/
 }
 
 .nav-link {
