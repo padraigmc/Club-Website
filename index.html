@@ -7,8 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
+	<link rel="icon" href="img/favicon.png" type="image/ico">
 
-	<title>Outdoor Pursuits</title>
+	<title> UL OPC</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,8 +21,8 @@
 <body class="bg-dark">	
 
 	<!-- Navbar -->
+	<div class="container-fluid" id="navContainer"></div>	
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-		<div class="container-fluid" id="navContainer">
 			<a class="navbar-brand" href="#">OPC</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -36,37 +37,52 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">About</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Gallery</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Gallery
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" href="gallery.html">Letterfrack</a>
+						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Forum</a>
+						<a class="nav-link" href="https://www.tapatalk.com/groups/ulopc/">Forum</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Contact</a>
 					</li>
 				</ul>
 			</div>
-		</div>
-	</nav>
+		</nav>		
+	</div>
 
 	<!-- Page Content -->
 
 	<!-- Jumbotron -->
-	<div class="jumbotron jumbotron-fluid text-center">
-		<h1>Outdoor Pursuits Club</h1>
-        <a class="btn btn-dark btn-lg rounded-pill mt-3" href="https://ulwolves.ie/club/outdoor-pursuits" target="_blank">Register now!</a>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container-fluid p-0 d-flex align-items-center flex-column">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1>Outdoor Pursuits Club</h1>
+					<a class="btn btn-dark btn-lg rounded-pill mt-3" href="https://ulwolves.ie/club/outdoor-pursuits" target="_blank">
+						Go to ULWolves.ie
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="container">
+	<!-- Activity profiles -->
+	<div class="container bg-light p-5">
+
 		<!-- Rock climbing profile -->
-		<div class="row bg-light">
+		<div class="row mb-5">
 			<div class="col-md-6 order-lg-2 order-md-2">
-				<img class="image-fluid mx-auto d-block" src="img/test.jpg" alt="Mr Bean">
+				<img class="image-fluid mx-auto d-block fit-image" src="img/activities/climbing.jpg" alt="Rock Climbing">
 			</div>
-			<div class="col-md-6 text-center order-lg-1 order-md-1">
-				<h1 class="mt-5">Rock Climbing</h1>
-				<p class="lead mb-5">
+			<div class="col-md-6 text-center my-auto order-lg-1 order-md-1">
+				<h1 class="pt-small">Rock Climbing</h1>
+				<p class="lead">
 					We love rock climbing at OPC! Be it bouldering, sport or trad we can offer it all!
 					Join today to climb in our own dedicated climbing wall on UL campus.				
 				</p>
@@ -74,13 +90,13 @@
 		</div>
 
 		<!-- Hiking profile -->
-		<div class="row bg-light">
+		<div class="row mb-5">
 			<div class="col-md-6">
-				<img class="image-fluid mx-auto d-block" src="img/test.jpg" alt="Mr Bean">
+				<img class="image-fluid d-block fit-image" src="img/activities/hiking.jpg" alt="Hiking">
 			</div>
-			<div class="col-md-6 text-center">
-				<h1 class="mt-5">Hiking</h1>
-				<p class="lead mb-5">
+			<div class="col-md-6 text-center my-auto">
+				<h1 class="pt-small">Hiking</h1>
+				<p class="lead">
 					One of the best ways to see the Irish landscape!
 					Every semester we hike breathaking places like Carauntoohil in Kerry and Galtimore in Limerick. 
 				</p>
@@ -88,13 +104,13 @@
 		</div>
 
 		<!-- Orienteering profile -->
-		<div class="row bg-light">
+		<div class="row mb-5">
 			<div class="col-md-6 order-lg-2 order-md-2">
-				<img class="image-fluid mx-auto d-block" src="img/test.jpg" alt="Mr Bean">
+				<img class="image-fluid mx-auto d-block fit-image" src="img/activities/orienteering.jpg" alt="Orienteering">
 			</div>
-			<div class="col-md-6 text-center order-lg-1 order-md-1">
-				<h1 class="mt-5">Orienteering</h1>
-				<p class="lead mb-5">
+			<div class="col-md-6 text-center my-auto order-lg-1 order-md-1">
+				<h1 class="pt-small">Orienteering</h1>
+				<p class="lead">
 					Enjoy getting lost? You have found the right club!
 					Orienteering combines hiking and map reading as you trek to different checkpoints.				
 				</p>
@@ -102,35 +118,75 @@
 		</div>
 
 		<!-- Caving profile -->
-		<div class="row bg-light">
-			<div class="col-md-6">
-				<img class="image-fluid mx-auto d-block" src="img/test.jpg" alt="Mr Bean">
-			</div>
+		<div class="row">
 			<div class="col-md-6 text-center">
-				<h1 class="mt-5">Caving</h1>
-				<p class="lead mb-5">
+				<img class="image-fluid mx-auto d-block fit-image" src="img/activities/caving.jpg" alt="Caving">
+			</div>
+			<div class="col-md-6 text-center my-auto">
+				<h1 class="pt-small">Caving</h1>
+				<p class="lead">
 					Explore Ireland's underground beauty through the sport of caving!				
 				</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="container mt-5">
+	<br />
+
+	<!-- Footer -->
+	<div class="container-fluid bg-light p-3">
 		<div class="row">
-			<div class="col-md-6">
-				<iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=MCFM%2B2H%20Sreelane%2C%20County%20Limerick+(Outdoor%20Pursuits%20Club)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed"
+			<!-- google maps iframe -->
+			<div class="col-md-7 text-center">
+				<p class="lead mt-3 mb-0">Visit our climbing wall!</p>
+				<iframe width="100%" height="80%" src="https://maps.google.com/maps?width=100%&amp;height=80%&amp;hl=en&amp;q=MCFM%2B2H%20Sreelane%2C%20County%20Limerick+(Outdoor%20Pursuits%20Club)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed"
 				frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-					<a href="https://www.maps.ie/coordinates.html">find my location</a>
 				</iframe>
-				<br />
+			</div>
+
+			<div class="col-md-3 text-center">
+
+				<!-- Useful links -->
+				<p class="lead mt-3 mb-0">Useful Links</p>
+				<ul class="list-group footerLinks">
+					<li class="list-item">
+						<a href="https://www.outsideonline.com/2062326/beginners-guide-rock-climbing#close" target="_blank">Climbing for Beginners</a>
+					</li>
+					<li class="list-item">
+						<a href="https://www.redbull.com/ie-en/the-most-awe-inspiring-hiking-trails-in-ireland" target="_blank">Hiking in Ireland</a>
+					</li>
+					<li class="list-item">
+						<a href="https://www.orienteering.ie/" target="_blank">Orienteering in Ireland</a>
+					</li>
+					<li class="list-item">
+						<a href="https://www.caving.ie/" target="_blank">Caving in Ireland</a>
+					</li>
+					<li class="list-item">
+						<a href="https://www.epictv.com/" target="_blank">EpicTV</a>
+					</li>
+				</ul>
+			</div>
+
+			<br />
+
+			<!-- Social media icons-->
+			<div class="col-md-2 bg-light text-center my-auto mx-auto">
+				<a href="https://www.facebook.com/groups/1164355296948736/" target="_blank">
+					<img class="icon" src="img/social_media_icons/facebook2.png" alt="Facebook icon">
+				</a>
+				<a href="https://www.instagram.com/ulopc/" target="_blank">
+					<img class="icon" src="img/social_media_icons/instagram2.png" alt="Instagram icon">
+				</a>
+				<a href="https://www.youtube.com/user/ULOutdoorpursuitsclu" target="_blank">
+					<img class="icon" src="img/social_media_icons/youtube2.png" alt="Youtube icon">
+				</a>
 			</div>
 		</div>
 	</div>
 
-
-
-
-	
+	<div class="bg-dark">
+		<p class="text-center m-0 copyright-footer"> © Copyright UL Outdoor Pursuits Club 2020</p>
+	</div>	
 
 
 

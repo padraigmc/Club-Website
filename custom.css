@@ -4,16 +4,28 @@ body {
 }
 
 @media (max-width:767.98px){
+    .icon {
+        margin: 10px 15px !important;
+    }
+
+    .pt-small {
+        padding-top: 15px !important;
+    }
+
+    #fullAlbumButton {
+        margin: 15px auto;
+    }
 
 }
 @media (min-width:768px){
     .nav-link {
         padding:.5rem 2rem !important;
     }
-}
 
-nav {
-    /*opacity: 70%;*/
+    .icon {
+        display: flex;
+        align-items: right;
+    }
 }
 
 .nav-link {
@@ -22,7 +34,7 @@ nav {
 
 .jumbotron {
     padding: 8em;
-    background-image: url(img/banner1.jpg);
+    background-image: url(img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,4 +47,19 @@ nav {
 .fit-image {
     width: 100%;
     object-fit: cover;
+}
+
+.icon {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 15px auto;
+}
+
+.footerLinks {
+    list-style-type: none;
+}
+
+.copyright-footer {
+    color: #afafaf;
+    font-size: 0.75rem;
 }
