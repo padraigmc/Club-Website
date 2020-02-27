@@ -54,6 +54,10 @@ p {
     font-size: 0.85rem;
 }
 
+.font-large {
+    font-size: 1.05rem;
+}
+
 .separate {
     color: black;
     width: 50%;
