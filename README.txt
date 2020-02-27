@@ -1,3 +1,6 @@
+Author - Padraig McCarthy
+Email - padraig.mc1999@gmail.com
+
 --------------------- Home Page - index.html ---------------------
 Banner - 1260 x 280
 Activity pictures - widescreen (16x9)
