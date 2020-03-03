@@ -17,6 +17,11 @@
 	<!-- Csutom CSS -->
 	<link rel="stylesheet" type="text/css" href="custom.css">
 
+	<script>
+		// variable used to highlight navbar link on current page
+		var pageID = "contact";
+	</script>
+
 </head>
 
 <body class="bg-light">	
@@ -98,48 +103,8 @@
 		}
 	?>
 
-<!-- Navbar -->
-	<div class="container-fluid p-0" id="navContainer">
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-			<!-- Badge -->
-			<a class="navbar-brand" href="index.php">OPC</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<!-- Home -->
-					<li class="nav-item">
-						<a class="nav-link" href="index.php">Home</a>
-					</li>
-					<!-- About -->
-					<li class="nav-item">
-						<a class="nav-link" href="about.php">About</a>
-					</li>
-					<!-- Gallery -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Gallery
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  	<a class="dropdown-item" href="gallery_letterfrack_2019.php">Letterfrack 2019</a>
-						 	<a class="dropdown-item" href="gallery_brandon_xmas_2019.php">Xmas in Brandon 2019</a>
-						</div>
-					</li>
-					<!-- Forum -->
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.tapatalk.com/groups/ulopc/" target="_blank">Forum</a>
-					</li>	
-					<!-- Contact -->
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Contact
-						<span class="sr-only">(current)</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>		
-	</div>
+	<!-- Navbar -->
+	<?php include 'navbar.html'; ?>
 
 	<!-- Page Content -->
 	
@@ -148,7 +113,9 @@
 		<div class="container-fluid p-0 d-flex align-items-center flex-column">
 			<div class="row">
 				<div class="col-md-12 text-center mb-10">
-					<h1 class="banner-text pb-30">Contact Us!</h1>
+					<h1 class="banner-text pb-30">
+						Contact Us!
+					</h1>
 					<a class="btn btn-dark btn-md rounded-pill banner-text m-0" href="https://ulwolves.ie/club/outdoor-pursuits" target="_blank">
 						Go to ULWolves.ie
 					</a>
@@ -156,7 +123,6 @@
 			</div>
 		</div>
 	</div>
-
     <div class="container-fluid bg-light pt-3" id="form">	
 		<div class="row">
 			<div class="col-md-8 px-0">
@@ -164,7 +130,7 @@
 					<div class="form-group">
 						<label class="control-label col-sm-4" for="email">Full Name:</label>
 						<div class="col-sm-10 col-md-12">
-							<input type="text" class="form-control" name="name" id="name" placeholder="Name" value="<?php echo $name; ?>" maxlength="75" tabindex="1">
+							<input type="text" class="form-control" name="name" id="name" placeholder="Name" value="<?php echo $name; ?>" maxlength="30" tabindex="1">
 							<p class="p-0 m-0 text-danger"><?php echo $nameErr; ?></p>
 						</div>
 					</div>
@@ -178,7 +144,7 @@
 					<div class="form-group">
 						<label class="control-label col-sm-4" for="pwd">Your Message:</label>
 						<div class="col-sm-10 col-md-12">          
-							<textarea class="form-control" name="message" id="message" placeholder="Your Message" cols="30" rows="6" maxlength="1000" tabindex="3"><?php echo $message; ?></textarea>
+							<textarea class="form-control" name="message" id="message" placeholder="Your Message" cols="30" rows="6" maxlength="500" tabindex="3"><?php echo $message; ?></textarea>
 							<p class="p-0 m-0 text-danger"><?php echo $messageErr; ?></p>
 						</div>
 					</div>
@@ -186,7 +152,7 @@
 						<div class="col-sm-3 col-md-3 d-flex flex-column justify-content-center order-md-2 order-lg-2">
 							<div class="d-flex flex-row">
 								<h5><small><?php echo $num1 . " + " . $num2 . " = "; ?></small></h5>
-								<input type="text" class="mx-2" name="verify" id="verify" size="1" tabindex="4">
+								<input type="text" class="mx-2 text-center" name="verify" id="verify" size="1" tabindex="4" maxlength="2">
 								<input type="hidden" name="lastRes" value="<?php echo $res ?>">
 							</div>
 							<div>
@@ -213,7 +179,7 @@
 						</div>
 					</div>
 				
-					<div class="row flex-grow-1">
+					<div class="row flex-grow-1" id="SUMap">
 						<div class="col-md-12">
 							<div style="height: 100%; width: 100%;">
 								<iframe width="100%" height="100%" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=UL%20SU%2C%20MCFH%2B7V%20Sreelane%2C%20County%20Limerick+(UL%20Student's%20Union)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed"

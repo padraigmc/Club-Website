@@ -17,52 +17,18 @@
 	<!-- Csutom CSS -->
 	<link rel="stylesheet" type="text/css" href="custom.css">
 
+	<script>
+		// variable used to highlight navbar link on current page
+		// corresponding navbar item in the navbar.html must have id equal to value of pageID
+		var pageID = "home";
+	</script>
+
 </head>
 
 <body class="bg-light">	
 
 	<!-- Navbar -->
-	<div class="container-fluid p-0" id="navContainer">
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-			<!-- Badge -->
-			<a class="navbar-brand" href="#">OPC</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<!-- Home -->
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<!-- About -->
-					<li class="nav-item">
-						<a class="nav-link" href="about.php">About</a>
-					</li>
-					<!-- Gallery -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Gallery
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  	<a class="dropdown-item" href="gallery_letterfrack_2019.php">Letterfrack 2019</a>
-						 	<a class="dropdown-item" href="gallery_brandon_xmas_2019.php">Xmas in Brandon 2019</a>
-						</div>
-					</li>
-					<!-- Forum -->
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.tapatalk.com/groups/ulopc/" target="_blank">Forum</a>
-					</li>
-					<!-- Contact -->
-					<li class="nav-item">
-						<a class="nav-link" href="contact.php">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>		
-	</div>
+	<?php include 'navbar.html'; ?>
 
 	<!-- Page Content -->
 
@@ -71,7 +37,9 @@
 		<div class="container-fluid d-flex flex-column align-items-center">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h1 class="banner-text">Outdoor Pursuits Club</h1>
+					<h1 class="banner-text">
+						Outdoor Pursuits Club
+					</h1>
 					<a class="btn btn-dark btn-md rounded-pill banner-text" href="https://ulwolves.ie/club/outdoor-pursuits" target="_blank">
 						Go to ULWolves.ie
 					</a>

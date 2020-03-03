@@ -32,6 +32,10 @@ p {
     .activities .row {
         padding-top: 1rem;
     }
+
+    #SUMap {
+        display: none;
+    }
 }
 
 /* Desktop */
