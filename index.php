@@ -55,10 +55,6 @@
 					<li class="nav-item">
 						<a class="nav-link" href="https://www.tapatalk.com/groups/ulopc/" target="_blank">Forum</a>
 					</li>
-					<!-- FAQ's -->
-					<li class="nav-item">
-						<a class="nav-link" href="faq.php">FAQ</a>
-					</li>
 					<!-- Contact -->
 					<li class="nav-item">
 						<a class="nav-link" href="contact.php">Contact</a>
@@ -100,6 +96,8 @@
 					Join us at our campus bouldering wall for a climb every Monday, Tuesday and Thursday! We also host regular 
 					trips to Suas Climbing Center and to some of Ireland's most beautiful outdoor climbing spots like the 
 					Burren, Co. Clare!
+
+					<?php echo $_SERVER['REQUEST_URI']; ?>
 				</p>
 			</div>
 		</div>

@@ -54,11 +54,7 @@
 					<!-- Forum -->
 					<li class="nav-item">
 						<a class="nav-link" href="https://www.tapatalk.com/groups/ulopc/" target="_blank">Forum</a>
-					</li>
-					<!-- FAQ's -->
-					<li class="nav-item">
-						<a class="nav-link" href="faq.php">FAQ</a>
-					</li>
+					</li>				
 					<!-- Contact -->
 					<li class="nav-item">
 						<a class="nav-link" href="contact.php">Contact</a>

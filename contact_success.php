@@ -95,6 +95,8 @@
 
 				header("Location: contact_success.php");
 			}		
+
+			
 		}
 	?>
 
@@ -159,45 +161,11 @@
 
     <div class="container-fluid bg-light pt-3" id="form">	
 		<div class="row">
-			<div class="col-md-8 px-0">
-				<form class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) . "#form";?>" method="post">
-					<div class="form-group">
-						<label class="control-label col-sm-4" for="email">Full Name:</label>
-						<div class="col-sm-10 col-md-12">
-							<input type="text" class="form-control" name="name" id="name" placeholder="Name" value="<?php echo $name; ?>" maxlength="75" tabindex="1">
-							<p class="p-0 m-0 text-danger"><?php echo $nameErr; ?></p>
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="control-label col-sm-4" for="pwd">Email:</label>
-						<div class="col-sm-10 col-md-12">          
-							<input type="text" class="form-control" name="email" id="email" placeholder="Email" value="<?php echo $email; ?>" maxlength="50" tabindex="2">
-							<p class="p-0 m-0 text-danger"><?php echo $emailErr; ?></p>
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="control-label col-sm-4" for="pwd">Your Message:</label>
-						<div class="col-sm-10 col-md-12">          
-							<textarea class="form-control" name="message" id="message" placeholder="Your Message" cols="30" rows="6" maxlength="1000" tabindex="3"><?php echo $message; ?></textarea>
-							<p class="p-0 m-0 text-danger"><?php echo $messageErr; ?></p>
-						</div>
-					</div>
-					<div class="form-group d-flex flex-row">   
-						<div class="col-sm-3 col-md-3 d-flex flex-column justify-content-center order-md-2 order-lg-2">
-							<div class="d-flex flex-row">
-								<h5><small><?php echo $num1 . " + " . $num2 . " = "; ?></small></h5>
-								<input type="text" class="mx-2" name="verify" id="verify" size="1" tabindex="4">
-								<input type="hidden" name="lastRes" value="<?php echo $res ?>">
-							</div>
-							<div>
-								<p class="p-0 m-0 text-danger"><?php echo $verifyErr; ?></p>
-							</div>
-						</div>     
-						<div class="col-sm-9 col-md-9 order-md-1 order-lg-1">
-							<button type="submit" class="btn btn-dark btn-block" name="submit" id="submit" tabindex="5">Submit</button>
-						</div>
-					</div>
-				</form>
+			<div class="col-md-8 px-0 my-auto text-center">
+				<h1>Thanks for getting in contact!</h1>
+				<p>
+					One of our committee members will be in touch with you!
+				</p>
 			</div>
 			<div class="col-md-4 px-0">
 				<div class="container-fluid h-100 d-flex flex-column">
